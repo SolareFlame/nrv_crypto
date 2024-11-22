@@ -47,7 +47,6 @@ $html = <<<HTML
         <h2>Estimation du temps nécessaire pour une collision par force brute avec une probabilité de 1% ::</h2>
         <p>En supposant que chaque tentative de hachage prend le même temps que celui calculé ci-dessus, il faudrait environ {$estimated_time} secondes pour réaliser une collision avec une probabilité de 1%.</p>
         <p>Ce temps correspond à environ {$estimated_time_formatted}.</p>
-        <hr>
     </div>
 </body>
 </html>
