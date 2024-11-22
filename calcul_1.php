@@ -14,9 +14,10 @@ $execution_time_formatted = format_time($execution_time);
 // NB CALCUL POUR COLLISION
 $l = pow(2, 312);
 $k = sqrt(9.21 * $l);
+$k_with_collision_p = $k * $collision_p;
 
 // TEMPS POUR COLLISION
-$estimated_time = $k * $execution_time;
+$estimated_time = $k * $execution_time * $collision_p;
 $estimated_time_formatted = format_time($estimated_time);
 
 // RENDER HTML
@@ -37,13 +38,14 @@ $html = <<<HTML
 
     <div class="result">
         <h2>Nombre d'opérations nécessaires pour une collision avec une probabilité de 1% :</h2>
-        <p>Avec une probabilité de {$collision_p} de collision, un attaquant devrait effectuer environ {$k} opérations pour trouver une collision.</p>
+        <p>Avec une probabilité de {$collision_p} de collision, un attaquant devrait effectuer environ {$k_with_collision_p} opérations pour trouver une collision.</p>
     </div>      
 
     <div class="result">
-        <h2>Estimation du temps nécessaire pour une collision par force brute :</h2>
+        <h2>Estimation du temps nécessaire pour une collision par force brute avec une probabilité de 1% ::</h2>
         <p>En supposant que chaque tentative de hachage prend le même temps que celui calculé ci-dessus, il faudrait environ {$estimated_time} secondes pour réaliser une collision avec une probabilité de 1%.</p>
         <p>Ce temps correspond à environ {$estimated_time_formatted}.</p>
+        <hr>
     </div>
 </body>
 </html>
