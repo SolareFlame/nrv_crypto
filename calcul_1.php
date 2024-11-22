@@ -12,7 +12,7 @@ $execution_time = $end_time - $start_time;
 $execution_time_formatted = format_time($execution_time);
 
 // NB CALCUL POUR COLLISION
-$l = pow(2, 184);
+$l = pow(2, 312);
 $k = sqrt(9.21 * $l);
 
 // TEMPS POUR COLLISION
