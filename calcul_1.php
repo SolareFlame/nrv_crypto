@@ -14,9 +14,11 @@ $execution_time_formatted = format_time($execution_time);
 // NB CALCUL POUR COLLISION
 $l = pow(2, 312);
 $k = sqrt(9.21 * $l);
+
+// NB CALCUL POUR COLLISION AVEC PROBA
 $k_with_collision_p = $k * $collision_p;
 
-// TEMPS POUR COLLISION
+// TEMPS POUR COLLISION AVEC PROBA
 $estimated_time = $k * $execution_time * $collision_p;
 $estimated_time_formatted = format_time($estimated_time);
 
