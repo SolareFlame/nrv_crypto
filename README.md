@@ -13,6 +13,9 @@ Le fichier `calcul_2.php` calcule le temps pour un hashage pour un coût allant 
 [^1]: Cout d'origine prévu par l'énoncé.
 [^2]: Probabilité d'origine prévue par l'énoncé.
 
+> [!TIP]
+> Le fichier `calcul_moore.php` est un fichier bonus pour tester les résultats obtenus dans le documents.
+
 ## 📝 Informations 
 
 > [!NOTE]
